@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-key */
 import {MagnifyingGlassIcon} from "@heroicons/react/24/outline"
 
-export default function Widgets() {
+export default function Widgets({newsResults}) {
   return (
     <div className="xl:w-[600px] hidden lg:inline ml-8 space-y-5">
         <div className="w-[90%] xl:w-[75%] sticky top-0 bg-white py-1.5 z-50"> 
@@ -9,6 +10,10 @@ export default function Widgets() {
                 <input type="text" placeholder="Search Twitter" className="absolute inset-0 rounded-full pl-11 border-gray-500 text-gray-700 focus:shadow-lg focus:bg-white bg-gray-100"/>
             </div>
         </div>
+
+        {newsResults?.map((article)=>(
+            <p>{article.title}</p>
+        ))}
     </div>
   )
 }
