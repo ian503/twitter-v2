@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "axios": "^1.4.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swr": "^2.1.5"
+    "swr": "^2.1.5",
+    "unfetch": "^5.0.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
