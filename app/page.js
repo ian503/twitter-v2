@@ -4,7 +4,7 @@ import Widgets from '@/components/Widgets'
 
 
 
-export default function Home({newsResults, randomUsersResults}) {
+export default function Home({newsResults}) {
   
   
   return (
@@ -16,9 +16,8 @@ export default function Home({newsResults, randomUsersResults}) {
 
       <Widgets  newsResults={newsResults?.articles}/>
 
-      <div>api results</div>
+      <div>api results!</div>
       <div>{newsResults}</div>
-      <div>{randomUsersResults}</div>
     </main>
   )
 }
@@ -32,28 +31,11 @@ export async function getServerSideProps() {
     "https://saurav.tech/NewsAPI/top-headlines/category/business/us.json"
   ).then((res) => res.json());
 
-  // Who to follow section
-
-  let randomUsersResults = [];
-
-  try {
-    const res = await fetch(
-      "https://randomuser.me/api/?results=30&inc=name,login,picture"
-    );
-
-    randomUsersResults = await res.json();
-  } catch (e) {
-    randomUsersResults = [];
-  }
-
-  // const randomUsersResults = await fetch(
-  //   "https://randomuser.me/api/?results=30&inc=name,login,picture"
-  // ).then((res) => res.json());
+  
 
   return {
     props: {
       newsResults,
-      randomUsersResults,
     },
   };
 }
