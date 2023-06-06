@@ -23,6 +23,26 @@ export default function Feed() {
             text: "wow!",
             timestamp: "2 days ago"
 
+        },
+        {
+            id: "3",
+            name: "Ioan Lupu",
+            userName: "@ioan",
+            userImg: "https://avatars.githubusercontent.com/u/71052435?v=4",
+            img: "https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60",
+            text: "wow!",
+            timestamp: "2 days ago"
+
+        },
+        {
+            id: "4",
+            name: "Ioan Lupu",
+            userName: "@ioan",
+            userImg: "https://avatars.githubusercontent.com/u/71052435?v=4",
+            img: "https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8bW91bnRhaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60",
+            text: "wow!",
+            timestamp: "2 days ago"
+
         }
     ]
   return (
